@@ -15,13 +15,13 @@ namespace binarySearch
            var linearStart = DateTime.Now;
            var linear = LinearSearch(numbers, userNum);
            var linearStop = DateTime.Now;
-           System.Console.WriteLine($"Linear: {linear} --> {linearStop - linearStart}");
+           System.Console.WriteLine($"Linear: {linear} --> {(linearStop - linearStart).TotalMilliseconds}ms");
 
            var binStart = DateTime.Now;
            var binary = BinarySearch(numbers, userNum);
            var binEnd = DateTime.Now;
 
-           System.Console.WriteLine($"Binary: {binary} --> {binEnd - binStart}");
+           System.Console.WriteLine($"Binary: {binary} --> {(binEnd - binStart).TotalMilliseconds}ms");
         }
 
         private static int BinarySearch(int[] array, int item){
