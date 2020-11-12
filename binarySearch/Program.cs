@@ -5,9 +5,7 @@ namespace binarySearch
     class Program
     {
         static void Main(string[] args)
-        {
-            Random rand = new Random();
-
+        {            
             System.Console.WriteLine("Welcome. Please pick a number between 1 and 1000");
             int userNum = Convert.ToInt32(System.Console.ReadLine());
             
