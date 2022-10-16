@@ -12,7 +12,7 @@ def intro():
         return guessNumber
     else:
         print(f'{guessNumber} is over 1000, try again.')
-        intro()
+        return intro()
 
 def binary_search(list, item):
     low = 0    
