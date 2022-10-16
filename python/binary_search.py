@@ -5,10 +5,8 @@ unsorted_list = [819,840,154,506,449,183,100,302,75,945,321,1,978,662,541,85,756
 def intro():
     print("Welcome. Please pick a number between 1 and 1000")
     guessNumber = int(input())
-    print(f'guessnumber: {guessNumber}')
 
     if guessNumber <= 1000:
-        print(f'Guess number({guessNumber}) is under 1000!')
         return guessNumber
     else:
         print(f'{guessNumber} is over 1000, try again.')
@@ -34,8 +32,6 @@ def binary_search(list, item):
 
 def main():
     guess = intro()
-    print(f'Guess has officially been set to {guess}')
-
     startTime = datetime.datetime.now()
     answer = binary_search(unsorted_list, guess)
     endTime = datetime.datetime.now()
